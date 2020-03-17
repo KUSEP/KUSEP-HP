@@ -1,0 +1,91 @@
+@media screen and (min-width:480px) {
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#dd ul {
+    list-style: none;
+}
+
+#dd li {
+    list-style: none;
+}
+
+#dd {
+  text-align: center;
+  background: #f2f2f2;
+}
+#dd > ul {
+  width: 90%;
+  display: flex;
+  margin: 0 0;
+}
+#dd > ul > li {
+  height: 50px;
+  flex: 1;
+}
+#dd > ul > li:not(:last-child) {
+  margin-right: 0px;
+}
+#dd ul li {
+  position: relative;
+}
+#dd li li {
+  border-bottom: 1px solid white;
+}
+#dd a {
+  display: block;
+  transition: 0.3s;
+}
+#dd a:hover {
+  text-decoration: none;
+}
+#dd > ul > li > a {
+  padding: 13px 0 0px;
+  /*border-bottom: 5px solid #999;*/
+}
+#dd > ul > li > a.active {
+  border-bottom-color: #37a0da;
+}
+#dd .level1, #dd .level2 {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+}
+#dd .level1 a, #dd .level2 a {
+  padding: 10px 0px;
+  background: #f2f2f2;
+}
+#dd .level1 .active, #dd .level2 .active {
+  color: white;
+  background: #37a0da;
+}
+#dd .level1 {
+  top: 100%;
+  left: -20%;
+}
+#dd .level2 {
+  top: 0;
+  left: 80%;
+  border-left: 0px solid white;
+}
+#dd .item-arrow:after {
+  content: “”;
+  position: absolute;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  transform: rotate(45deg);
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  right: 10px;
+  margin-top: -4px;
+  border-color: #37a0da;
+}
+}
+
+@media screen and (max-width:479px) {
+
+}
