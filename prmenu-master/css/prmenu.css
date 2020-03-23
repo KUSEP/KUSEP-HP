@@ -135,7 +135,7 @@ div.prmenu_container ul li:last-child {
 
 /* small pads */
 @media all
-and (max-width : 959px) {
+and (max-width : 1080px) {
 
 
 	/*  NAV   */
@@ -156,7 +156,7 @@ and (max-width : 959px) {
 
 
 /* handheld mobile devices */
-@media all and (max-width: 720px)
+@media all and (max-width: 1080px)
 {
 
 
