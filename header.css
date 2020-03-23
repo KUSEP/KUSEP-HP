@@ -1,0 +1,54 @@
+#header {
+    width: 100%;
+    height: auto;
+}
+
+#topper {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media all and (min-width:1081px) { /*for desktop*/
+    img#logo {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    span#title {
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+
+    
+    span#lang {
+        display: inline-block;
+        position: absolute;
+        right: 2%;
+        top: 4rem;
+        
+    }
+}
+
+@media all and (max-width:1080px) { /*for mobile phones*/
+    img#logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    span#title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    span#lang {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+    }
+}

@@ -1,0 +1,34 @@
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+@media all and (min-width:1081px) { /*for desktop*/
+    #footer img {
+        width: 10%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #footer i {
+        float: right;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: whitesmoke;
+    }
+}
+
+@media all and (max-width:1080px) { /*for mobile phones*/
+    #footer img {
+        width: 20%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #footer i{
+        text-align: center;
+        display: block;
+        color: whitesmoke;
+    }
+}
