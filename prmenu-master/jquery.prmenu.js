@@ -238,7 +238,7 @@
 
 
 		plugin.resizeLinks = function() {
-			if ($(window).width() > 720) {
+			if ($(window).width() > 1080) {//default:720
 				plugin.setupMenuForDesktopDevices();
 			} else {
 				plugin.setupMenuForHandheldDevices();
