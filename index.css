@@ -1,0 +1,18 @@
+.header_imgs {
+    margin: 20px 0 50px;
+}
+
+.header_imgs picture img, .header_imgs picture source {
+    width: 100%;
+    height: auto;
+}
+
+.header_imgs .slick-next {
+    right: 20px;
+    z-index: 99;
+}
+
+.header_imgs .slick-prev {
+    left: 15px;
+    z-index: 100;
+}
