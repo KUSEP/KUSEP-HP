@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" /> <!--このご時世にshift-jisにするのだけは勘弁して下さい-->
+        <title>神奈川大学宇宙エレベータープロジェクト</title>
+        <link rel="stylesheet" href="general.css"> <!--cssの相対パスの変化に留意、随時変更を要請-->
+        <link rel="stylesheet" href="header.css"> <!--上に同じ-->
+        <link rel="stylesheet" href="footer.css"> <!--上に同じ-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" /> <!--レスポンシブデザインに対応するための魔法の呪文, 実際は裏で凄く面倒な変更してる, これについてはreadmeあたりを参照して下さい-->
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script> <!--jquery便利だね,脱jqueryしても良いよ,バージョンが古くなったら随時新しいのに置き換えて欲しい,β版はやめて-->
+        <script type="text/javascript" src="prmenu-master\jquery.prmenu.js"></script> <!--メニューに関するプラグイン-->
+        <link type="text/css" rel="stylesheet" href="prmenu-master\css\prmenu.css" /> <!--上に同じ-->
+        
+        <script type="text/javascript"> //javascriptの埋め込み方は流石に分かるよね
+            $(function() {
+                $("#header").load("header.html"); //ここでid="header"が宣言されたブロックに何のhtmlファイルを適用するか宣言してる、この場合header.htmlをid="header"の場所に埋め込む意味
+                $("#footer").load("footer.html"); //上に同じ、パスについては埋め込んだ先のhtmlファイルからのパスが必要なので常に相対パスに注意して欲しい. 絶対パスで良くね？と思った担当者は自分の判断で変えて下さい. この時は一連のコロナ騒動で大変だったんです。
+            });
+        </script>
+    </head>
+    <body>
+
+
+        <header><div id="header"></div></header> <!--ここでヘッダーとしての共通部分を入れる場所を定義してる、内容としてはロゴ、タイトル、メニューなど-->
+
+
+        <div class="content"> <!--[重要]この.content内がページ毎に内容が変わる、最もメインの部分、諸氏においてはここの中を更新するなどして欲しい、ここ以外の変更はサイト作成の経験や技術がある学生にのみやって欲しい、githubブランチさせて練習しても良いかと-->
+
+            <!--パンくずリスト, https://saruwakakun.com/html-css/basic/breadcrumbを参考にしました-->
+            <div id="breadcrumblist">
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <!-- 1つめ -->
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="http://space-ev.kanagawa-u.ac.jp/project/KUSEP/">
+                          <span itemprop="name">ホーム</span>
+                      </a>
+                      <meta itemprop="position" content="1" />
+                    </li>
+
+                    <!-- 2つめ -->
+                    <li itemprop="itemListElement" itemscope
+                         itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="http://space-ev.kanagawa-u.ac.jp/project/KUSEP/about_us.html"> <!--パンくずリストのurlはページ毎に変更をお願い-->
+                            <span itemprop="name">宇宙エレベータープロジェクトについて</span> <!--上に同じ、内容に合ったカテゴリ名を(ページ名でいいと思う)-->
+                        </a>
+                        <meta itemprop="position" content="2" /> <!--階層に応じて番号を変更して下さい、とは言っても4が限界かと-->
+                    </li>
+                </ol>
+            </div>
+
+
+           
+        </div>
+
+
+        <footer id="footer"></footer> <!--ここでフッターとしての共通部分を入れる場所を定義してる-->
+
+        
+    </body>
+</html>
