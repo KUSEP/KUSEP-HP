@@ -48,19 +48,47 @@
 
 
 
-#main-content {
-    width: 65%;
-    float: left;
-}
 
 
-#sidebar {
-    width: 30%;
-    float: right;
-}
 
-.clearfix:after {
-    content: "";
-    clear: both;
-    display: block;
-}
+@media all and (min-width:1081px) {
+
+    #main-content {
+        width: 65%;
+        float: left;
+    }
+    
+    
+    #sidebar {
+        width: 30%;
+        float: right;
+    }
+    
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    #sns {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+  }
+  
+  @media all and (max-width:1080px) {
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #sns {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+  }
