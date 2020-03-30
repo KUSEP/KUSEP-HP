@@ -34,7 +34,9 @@
     border-radius: 0.2rem;
     margin-left: auto;
     margin-right: auto;
+    list-style: none;
 }
+
 
 #info h1, #news h1 {
     padding-left: 3rem;
