@@ -52,19 +52,19 @@ YYYY_MM_DD.html に/KUSEP-HP/にある common-article.htmlのコードを完全�
    
 activities/YYYY/YYYY.html  
 を編集する(YYYYは上に同じ年度, 例だと: activities/2024/2024.html)  
-編集するのは<article>の入ってる<li>~</li>の間  
-まず既存の<li>~</li>をコピーして上の  
-<ul style="list-style: none;">  
-    <li>  
+編集するのは< article >の入ってる< li >~< /li >の間  
+まず既存の< li >~< /li >をコピーして上の  
+< ul style="list-style: none;">  
+    < li>  
 この二つの間にペーストする  
-ペーストした中の<a href=".html">の".html"の部分を"YYYY_MM_DD/YYYY_MM_DD.html"  
+ペーストした中の< a href=".html">の".html"の部分を"YYYY_MM_DD/YYYY_MM_DD.html"  
 に置き換える  
-<figure><img src=""></figure> <!--記事のサムネイル画像 正方形が望ましい--> のsrc=""の""の中にYYYY_MM_DD/の中に最初に入れた画像の中でサムネイルにしたい画像の相対パスを記述する。 src="YYYY_MM_DD/画像の名前.jpg"とかになってるはず。  
-次の次の行の datetime="YYYY-MM-DD">YYYY年MM月DD日</time> の部分のYMDも同じように記事の日時を入力する。  
-<h3></h3> の間に記事タイトルを入力(置き換え)する。  
-<p class="text_excerpt">記事の簡単な説明</p>  '記事の簡単な説明'の部分に必要に応じて記事の簡単な説明文を入力する。
-下に残っていると思われる不要な<li>~</li>をコメントアウトする。  
-index.htmlを最後に編集する。お知らせor新着情報の中の<li>~</li>に記事を更新した旨を他と書式を合わせてリンク付きで記載する。
+< figure>< img src="">< /figure> < !--記事のサムネイル画像 正方形が望ましい--> のsrc=""の""の中にYYYY_MM_DD/の中に最初に入れた画像の中でサムネイルにしたい画像の相対パスを記述する。 src="YYYY_MM_DD/画像の名前.jpg"とかになってるはず。  
+次の次の行の datetime="YYYY-MM-DD">YYYY年MM月DD日< /time> の部分のYMDも同じように記事の日時を入力する。  
+< h3>< /h3> の間に記事タイトルを入力(置き換え)する。  
+< p class="text_excerpt">記事の簡単な説明< /p>  '記事の簡単な説明'の部分に必要に応じて記事の簡単な説明文を入力する。
+下に残っていると思われる不要な< li>~< /li>をコメントアウトする。  
+index.htmlを最後に編集する。お知らせor新着情報の中の< li>~< /li>に記事を更新した旨を他と書式を合わせてリンク付きで記載する。
 以上、お疲れ様でした。  
 
 #### 機体を追加したい時
