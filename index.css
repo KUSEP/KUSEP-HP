@@ -18,40 +18,6 @@
 }
 
 
-#info, #news{
-    width: 100%;
-    height: auto;
-    background-color: #286090;
-    border-radius: 0.2rem;
-}
-
-
-
-#info ul, #news ul {
-    width: 93%;
-    height: auto;
-    background-color: white;
-    border-radius: 0.2rem;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-}
-
-
-#info h1, #news h1 {
-    padding-left: 3rem;
-    padding-bottom: 0;
-    font-weight: normal;
-}
-
-#info a, #news a {
-    text-decoration: none;
-}
-
-
-
-
-
 
 @media all and (min-width:1081px) {
 
