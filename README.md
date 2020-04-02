@@ -90,8 +90,7 @@ MS Edgeでのデバッグを指定する。javascriptで外部htmlを読み込�
 
 
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
 
 ## Author
 
-[tcnksm](https://github.com/tcnksm)
+[youyeh-gaoqiao](https://github.com/youyeh-gaoqiao)
