@@ -16,18 +16,145 @@ body {
   flex: 1;
 }
 
+.content_box {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+  border-color: #B0D7F7;
+  border-style: ridge;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.3);
+}
+
+.inner_content_box {
+  width: 98%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul a {
+  text-decoration: none;
+}
+
 h1.headline {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #181D62;/*文字色*/
+  background: linear-gradient(to right, #D5E9FF, white);/*背景色*/
+  border-left: solid 5px #424E82;/*左線*/
+  border-bottom: solid 3px #BABCD0;/*下線*/
+  font-size: 1.2rem;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+h2.headline {
   color: black;/*文字色*/
   background: transparent;/*背景透明に*/
   font-size: 1rem;
   padding: 0.25em 0.5em;
-  border-left: solid 5px #286090;
+  border-left: solid 5px #424E82;
 }
 
-h1.box {
-  color: white;
-  font-size: 1rem;
+
+
+.info_box {
+  width: 100%;
+  height: auto;
+  background-color: #F2F9FF;
+  border-color: #C5E4F8;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  border-style: solid;
 }
+
+.info_box h1 {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.info_box li {
+  list-style: none;
+}
+
+.info_box hr {
+  width: 95%;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #eeeeee;
+}
+
+.news_box {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, #014A9A, #1E80BD);
+  border-radius: 0.3rem;
+  filter: drop-shadow(0 0.1rem 0.1rem rgba(0,0,0,0.3));
+}
+
+.news_box h1 {
+  height: 1rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  color: white;
+  
+}
+
+.news_box ul {
+  height: auto;
+  background-color: white;
+  border-radius: 0 0 0.3rem 0.3rem / 0 0 0.3rem 0.3rem;
+  list-style: none;
+}
+
+.news_box hr {
+  width: 95%;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #eeeeee;
+}
+
+
+.youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+
+article {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 0px;
+	border-radius: 0.3rem;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px #999;
+}
+	article figure {
+		margin-right: 20px;
+		width: 100px;
+		height: 100px;
+	}
+		article figure img {
+			min-width: 100px;
+			max-width: 100%;
+			vertical-align: top;
+    }
+
 
 
 /*
