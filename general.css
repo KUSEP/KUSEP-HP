@@ -63,6 +63,12 @@ h2.headline {
 }
 
 
+table, td, tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
 
 .info_box {
   width: 100%;
@@ -151,7 +157,10 @@ article {
 	}
 		article figure img {
 			min-width: 100px;
-			max-width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
 			vertical-align: top;
     }
 
