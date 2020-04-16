@@ -49,6 +49,10 @@
   
   @media all and (max-width:1080px) {
 
+    #main-content {
+        width: 98%;
+    }
+
     #sidebar {
         width: 100%;
     }
