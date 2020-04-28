@@ -10,18 +10,7 @@ body {
 
 
 
-.content_box {
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  flex: 1;
-  border-color: #B0D7F7;
-  border-style: ridge;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  box-shadow: 0 0 1px 0 rgba(0,0,0,0.3);
-}
+
 
 .inner_content_box {
   width: 98%;
@@ -38,6 +27,14 @@ h1.headline {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #181D62;/*文字色*/
   background: linear-gradient(to right, #D5E9FF, white);/*背景色*/
+  border-left: solid 5px #424E82;/*左線*/
+  border-bottom: solid 3px #BABCD0;/*下線*/
+  font-size: 1.2rem;
+}
+a h1.headline:hover {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #D5E9FF;/*文字色*/
+  background: linear-gradient(to right, #181D62, white);/*背景色*/
   border-left: solid 5px #424E82;/*左線*/
   border-bottom: solid 3px #BABCD0;/*下線*/
   font-size: 1.2rem;
@@ -136,56 +133,25 @@ table, td, tr {
 
 
 
-article {
-	display: flex;
-	margin-bottom: 20px;
-	padding: 0px;
-	border-radius: 0.3rem;
-	box-sizing: border-box;
-	box-shadow: 0 0 5px #999;
+
+
+
+ol.index {
+  width: 70%;
+  /*background-color: #F7F7F7;*/
+  border-style: dotted;
+  border-color: #777777;
+  border-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  list-style-type: disc;
 }
-	article figure {
-		margin-right: 20px;
-		width: 100px;
-		height: 100px;
-	}
-		article figure img {
-			min-width: 100px;
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-			vertical-align: top;
-    }
-
-
-
-/*
-h1.bar {
-  position: relative;
-  display: inline-block;
-  padding: 0 200px;
-
+ol.index li {
+  margin: 1rem;
 }
 
-h1.bar:before {
-  left: 0;
-}
 
-h1.bar:after {
-  right: 0;
-}
-
-h1.bar:before, h1.bar:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 100px;
-  height: 1px;
-  background-color: #286090;
-}
-*/
 
 
 .breadcrumb {
@@ -222,6 +188,10 @@ h1.bar:before, h1.bar:after {
 
 
 
+
+
+
+
 @media all and (min-width:1081px) {
   .content {
     width: 80%;
@@ -230,7 +200,67 @@ h1.bar:before, h1.bar:after {
     padding-top: 3rem;
     flex: 1;
   }
+
+  .content_box {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    border-color: #B0D7F7;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.3);
+  }
+
+
+
+  ul.article_card {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  ul.article_card li{
+    width: 98%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul.article_card li a{
+    text-decoration: none;
+  }
+  ul.article_card li article{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a5a5a5;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 5px #999;
+  }
+  ul.article_card li article figure{
+    width: 20%;
+    height: auto;
+  }
+  ul.article_card li article figure img{
+    width: 100%;
+    height: auto;
+  }
+  ul.article_card li article div.text_content{
+    padding: 0.5rem;
+  }
+  ul.article_card li article:hover {
+    background-color: #deecf8;
+  }
 }
+
+
+
+
+
 
 @media all and (max-width:1080px) {
   .content {
@@ -239,5 +269,48 @@ h1.bar:before, h1.bar:after {
     margin-right: auto;
     padding-top: 3rem;
     flex: 1;
+  }
+
+
+
+  ul.article_card {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  ul.article_card li{
+    width: 98%;
+    margin-bottom: 2rem;
+  }
+  ul.article_card li a{
+    text-decoration: none;
+  }
+  ul.article_card li article{
+    width: 100%;
+    height: auto;
+    border-left: solid 1px #a5a5a5;
+    border-right: solid 1px #a5a5a5;
+    border-bottom: solid 1px #a5a5a5;
+    box-shadow: 0 0 5px #999;
+  }
+  ul.article_card li article figure{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 100%;
+  }
+  ul.article_card li article figure img{
+    width: 100%;
+    height: auto;
+  }
+  ul.article_card li article div.text_content{
+    padding: 0.5rem;
+  }
+  ul.article_card li article div.text_content time{
+  
+  }
+  ul.article_card li article:hover {
+    background-color: #deecf8;
   }
 }
