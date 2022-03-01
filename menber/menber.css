@@ -45,7 +45,6 @@ h1.title {
   font-size: 1.4rem;
 }
 
-
 h2.headline {
   color: black;/*文字色*/
   background: transparent;/*背景透明に*/
@@ -236,12 +235,6 @@ ol.index li {
     margin-left: auto;
     margin-right: auto;
   }
-
-  ul.article_card li h1.group_name{   /*メンバー紹介用グループ名*/
-    text-align: left;
-    font-size: 2.0rem;
-  }
- 
   ul.article_card li a{
     text-decoration: none;
   }
@@ -255,32 +248,10 @@ ol.index li {
     border-radius: 0.3rem;
     box-shadow: 0 0 5px #999;
   }
-
-
-
   ul.article_card li article figure{
     width: 20%;
     height: auto;
   }
-  ul.article_card li article figure.menber{   /* メンバー紹介用写真 */
-    width: 20%;
-    height: auto;
-  }
-
-  ul.article_card li article div.menber_data{ /*メンバー紹介用テキスト*/
-    margin-left: 50px;
-    margin-right: auto;
-    text-align: left;
-    line-height: 1.0em;
-  }
-  .menberName{    /*メンバー(名前)の設定*/
-    font-size: 30px;
-    /* background-color: #f2e5e7; */
-    padding: 10px 0px;
-    /* line-height: 1.231; */
-    margin-top: 0;
-  }
-
   ul.article_card li article figure img{
     width: 100%;
     height: auto;
@@ -288,15 +259,21 @@ ol.index li {
   ul.article_card li article div.text_content{
     width: 80%;
     padding: 0.5rem;
-    float: right;
+  }
+
+  ul.article_card li article div.text_content p.name_data{  /*add m*/
+    width: 100%;
+    padding: 0.5rem;
   }
   
   ul.article_card li article:hover {
     background-color: #deecf8;
   }
- 
-  
 }
+
+
+
+
 
 
 @media all and (max-width:1080px) {
@@ -322,7 +299,6 @@ ol.index li {
   }
   ul.article_card li a{
     text-decoration: none;
-    
   }
   ul.article_card li article{
     width: 100%;
@@ -332,39 +308,16 @@ ol.index li {
     border-bottom: solid 1px #a5a5a5;
     box-shadow: 0 0 5px #999;
   }
-  ul.article_card li h1.group_name{   /*メンバー紹介用グループ名*/
-    text-align: center;
-    font-size: 2.0rem;
-  }
   ul.article_card li article figure{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     width: 100%;
   }
-  ul.article_card li article figure.menber{   /* メンバー紹介用写真 */
-    width: 60%;
-    height: auto;
-  }
-
-  ul.article_card li article div.menber_data{ /*メンバー紹介用テキスト*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    line-height: 0.5em;
-  }
-  .menberName{                               /*メンバー(名前)の設定*/
-    font-size: 30px;
-    /* background-color: #f2e5e7; */
-    padding: 10px 0px;
-    /* line-height: 1.231; */
-    margin-top: 0;
-  }
   ul.article_card li article figure img{
     width: 100%;
     height: auto;
   }
-  
   ul.article_card li article div.text_content{
     padding: 0.5rem;
   }
@@ -374,5 +327,4 @@ ol.index li {
   ul.article_card li article:hover {
     background-color: #deecf8;
   }
-
 }
