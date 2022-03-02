@@ -13,9 +13,9 @@
 
         <meta charset="utf-8" />
         <title>メンバー紹介 | 神奈川大学宇宙エレベータープロジェクト</title>
-        <link rel="stylesheet" href="../general.css">
-        <link rel="stylesheet" href="../header.css">
-        <link rel="stylesheet" href="../footer.css">
+        <link rel="stylesheet" href="../../general.css">
+        <link rel="stylesheet" href="../../header.css">
+        <link rel="stylesheet" href="../../footer.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <script type="text/javascript" src="../../jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="../../prmenu-master\jquery.prmenu.js"></script>
@@ -23,8 +23,8 @@
         
         <script type="text/javascript">
             $(function() {
-                $("#header").load("../../header.html");
-                $("#footer").load("../../footer.html");
+                $("#header").load("../../../header.html");
+                $("#footer").load("../../../footer.html");
             });
         </script>
     </head>
@@ -59,57 +59,75 @@
 
             <br>
 
-            <!-- <div class="content_box"> -->
-                <!-- <div class="inner_content_box"> -->
+            <div class="content_box">
+                <div class="inner_content_box">
                     <br>
                     <h1 class="title">メンバー紹介</h1>
 
 
                     <hr>
                     <br>
-                    <h1 class="group_name">教職員</h1>
+                    <ul class="article_card">
+                        <!--
+                        <li>
+                            <a href=".html"> 
+                            <article>
+                                <figure><img src=""></figure> 
+                                <div class="text_content">
+                                    <p class="text_date"><time datetime="YYYY-MM-DD">YYYY年MM月DD日</time></p>
+                                    <h3>記事タイトル</h3>
+                                    <p class="text_excerpt">記事の簡単な説明</p>
+                                </div>
+                            </article>
+                            </a>
+                        </li>
+                        -->
 
-                    <div class="menber_list">
-                   
-                       
-                        <div class="menber_box">
-                          <a href="https://professor.kanagawa-u.ac.jp/eng/mechanical/prof35.html">
-                                <img src="img/T_Egami.jpg">
-                                <div class="menber_data">
+                        <h1 class="group_name">教職員</h1>
+
+                       <li>
+                            
+
+                            <a href="https://professor.kanagawa-u.ac.jp/eng/mechanical/prof35.html">
+                                <article>
+                                    <br>
+                                    <figure class="menber"><img src="img/T_Egami.jpg"></figure>
+
+                                    <div class="menber_data">
                                         <p>プロジェクトリーダー</p>
                                         <h1 class="menberName">江上 正</h1>
                                         <p>工学部機械工学科 教授</p>
-                                </div>
+                                    </div>
+                           
+                                </article>
                             </a>  
-                        </div>
-
-                        <div class="menber_box">
+                        </li>
+              
+                        <li>
                             <a href="prifile/M_Moriya.html">
-                             <img src="img/M_Moriya.jpg">
+                             <article>
+                                <br>
+                                <figure class="menber"><img src="img/M_Moriya.jpg"></figure>
                                 <div class="menber_data">
                                     <p>テクニカルアドバイザー</p>
                                     <h1 class="menberName">守屋 元道 </h1>
                                     <p>工学部 物理学教室 技術員</p>
                                 </div>
+                             </article>
                             </a>
-                        </div>
-
-                     </div>
-
-
-                  <br>
-                  <hr>
-                   <h1 class="group_name">学生</h1>
+                        </li>
 
                         <br>
+                        <hr>
+                        <br>
 
-                    <div class="menber_list">
+                        <h1 class="group_name">学生</h1>
 
-                        <div class="menber_box">
-
+                        <li>
                             <a href="prifile/Y_Yana.html">
-
-                                <img src="img/A_Yana.jpg"></figure>
+                            <article>
+                                <br>
+                                <figure class="menber"><img src="img/Y_Yana.jpg"></figure>
                                 <div class="menber_data">
                                     <p class="text_date">
                                         <p>チームリーダー</p>
@@ -117,27 +135,30 @@
                                         <p>工学部機械工学科 3年生</p>
                                     </p>
                                 </div>
-
+                            </article>
                             </a>
+                        </li>
 
-                        </div>
-
-                        <div class="menber_box">
+                        <li>
                             <a href="prifile/S_Yoshi.html">
-                             <img src="img/S_Yoshi.jpg">
+                            <article>
+                                <br>
+                                <figure class="menber"><img src="img/Y_Yoshi.jpg"></figure>
                                 <div class="menber_data">
                                     <p class="text_date">
                                      <h1 class="menberName">吉中 智美 </h1>
                                      <p>工学研究科 1年（大学院）</p>
                                     </p>
                                 </div>
+                            </article>
                             </a>
-                        </div>
+                        </li>
 
-
-                        <div class="menber_box">
+                        <li>
                             <a href="prifile/D_Iso.html">
-                               <img src="img/D_Iso.jpg">
+                            <article>
+                                <br>
+                                <figure class="menber"><img src="img/D_Iso.jpg"></figure>
                                 <div class="menber_data">
                                     <p class="text_date">
                                      <!-- <p>部長</p> -->
@@ -145,12 +166,15 @@
                                      <p>工学部機械工学科 4生</p>
                                     </p>
                                 </div>
+                            </article>
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="menber_box">
+                        <li>
                             <a href="prifile/R_Hase.html">
-                                <img src="img/R_Hase.jpg">
+                            <article>
+                                <br>
+                                <figure class="menber"><img src="img/R_Hase.jpg"></figure>
                                 <div class="menber_data">
                                     <p class="text_date">
                                      <!-- <p>部長</p> -->
@@ -158,12 +182,15 @@
                                      <p>工学部機械工学科 2年生</p>
                                     </p>
                                 </div>
+                            </article>
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="menber_box">
+                        <li>
                             <a href="prifile/S_Ikawa.html">
-                                    <img src="img/S_Ikawa.jpg">
+                            <article>
+                                <br>
+                                <figure class="menber"><img src="img/S_Ikawa.jpg"></figure>
                                 <div class="menber_data">
                                     <p class="text_date">
                                      <!-- <p>部長</p> -->
@@ -171,13 +198,15 @@
                                      <p>電気電子情報工学科 2年生</p>
                                     </p>
                                 </div>
+                            </article>
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="menber_box">
-
+                        <li>
                             <a href="prifile/R_Ishi.html">
-                                <img src="img/R_Ishi.jpg">
+                            <article>
+                                <br>
+                                <figure class="menber"><img src="img/R_Ishi.jpg"></figure>
                                 <div class="menber_data">
                                     <p class="text_date">
                                      <!-- <p>部長</p> -->
@@ -185,14 +214,15 @@
                                      <p>経済学部経済学科 2年生</p>
                                     </p>
                                 </div>
+                            </article>
                             </a>
-                        </div>>
+                        </li>
 
 
-                    </div>
+                    </ul>
 
-                <!-- </div> -->
-            <!-- </div> -->
+                </div>
+            </div>
 
             <br>
             <a href="../activities.html">前のページに戻る</a>

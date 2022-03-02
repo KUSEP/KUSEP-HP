@@ -230,6 +230,8 @@ ol.index li {
     padding-left: 0;
     width: 100%;
   }
+
+
   ul.article_card li{
     width: 98%;
     margin-bottom: 2rem;
@@ -237,10 +239,7 @@ ol.index li {
     margin-right: auto;
   }
 
-  ul.article_card li h1.group_name{   /*メンバー紹介用グループ名*/
-    text-align: left;
-    font-size: 2.0rem;
-  }
+
  
   ul.article_card li a{
     text-decoration: none;
@@ -262,23 +261,14 @@ ol.index li {
     width: 20%;
     height: auto;
   }
-  ul.article_card li article figure.menber{   /* メンバー紹介用写真 */
-    width: 20%;
-    height: auto;
-  }
+ 
 
-  ul.article_card li article div.menber_data{ /*メンバー紹介用テキスト*/
-    margin-left: 50px;
-    margin-right: auto;
-    text-align: left;
-    line-height: 1.0em;
-  }
-  .menberName{    /*メンバー(名前)の設定*/
+  ul.article_card li article div.menber_data h1.menberName{    /*メンバー(名前)の設定*/
     font-size: 30px;
     /* background-color: #f2e5e7; */
-    padding: 10px 0px;
+    padding: 0px 0px;
     /* line-height: 1.231; */
-    margin-top: 0;
+    margin-top: 10;
   }
 
   ul.article_card li article figure img{
@@ -295,7 +285,72 @@ ol.index li {
     background-color: #deecf8;
   }
  
+  /* //////////////////// */
+  /*     メンバー紹介ページ   */
+  /* //////////////////   */
+  .menber_list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+  }
+  .menber_box{
+    display: block;
+    margin:auto;
+    /* width: auto; */
+    
+  }
+  .menber_data{ /*メンバーページ,テキスト*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.0em;
+  }
+  .menber_list img{
+    width: 200px;
+    /* max-height: 40px; */
+  }
+
+  h1.group_name{   /*メンバーページ,グループ名*/
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .menber_detail{
+    position: relative;
+    /* display: flex; */
+    max-width: 1200px;
+    flex: 100%;
+    /* margin: 0 auto; */
+    margin: 100px auto;
+    /* font-size: 10px; */
+  }
   
+  /* .menber_detail_margin{ */
+    /* margin: 10px; */
+  /* } */
+  .menber_detail_header{
+    
+    display:flex;
+  }
+
+  .menber_detail_content{
+    
+    font-family: fantasy;
+    font-size: 20px;
+    margin:auto;
+
+  }
+  .menber_detail_visual img{
+    max-width: 600px;
+    padding: 0 20px 20px 0;
+  }
+  .menber_detail_keyword{
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+
+  }
 }
 
 
@@ -316,6 +371,7 @@ ol.index li {
     padding-left: 0;
     width: 100%;
   }
+  
   ul.article_card li{
     width: 98%;
     margin-bottom: 2rem;
@@ -332,10 +388,7 @@ ol.index li {
     border-bottom: solid 1px #a5a5a5;
     box-shadow: 0 0 5px #999;
   }
-  ul.article_card li h1.group_name{   /*メンバー紹介用グループ名*/
-    text-align: center;
-    font-size: 2.0rem;
-  }
+
   ul.article_card li article figure{
     margin-left: auto;
     margin-right: auto;
@@ -343,8 +396,9 @@ ol.index li {
     width: 100%;
   }
   ul.article_card li article figure.menber{   /* メンバー紹介用写真 */
-    width: 60%;
+    width: 30%;
     height: auto;
+    max-width: 200px;
   }
 
   ul.article_card li article div.menber_data{ /*メンバー紹介用テキスト*/
@@ -375,4 +429,32 @@ ol.index li {
     background-color: #deecf8;
   }
 
+  /*メンバー紹介ページ*/
+
+  .menber_list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+  }
+  .menber_box{
+    display: block;
+    margin:auto;
+    /* width: auto; */
+    
+  }
+  .menber_data{ /*メンバーページ,テキスト*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.0em;
+  }
+  .menber_list img{
+    width: 200px;
+    /* max-height: 40px; */
+  }
+  .group_name{   /*メンバーページ,グループ名*/
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }
