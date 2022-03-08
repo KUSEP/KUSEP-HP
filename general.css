@@ -296,7 +296,7 @@ ol.index li {
   }
   .menber_box{
     display: block;
-    margin:auto;
+    margin: 50px;
     /* width: auto; */
     
   }
@@ -325,33 +325,48 @@ ol.index li {
     margin: 100px auto;
     /* font-size: 10px; */
   }
-  
-  /* .menber_detail_margin{ */
-    /* margin: 10px; */
-  /* } */
   .menber_detail_header{
-    
-    display:flex;
+     display:flex;
   }
-
   .menber_detail_content{
     
     font-family: fantasy;
     font-size: 20px;
     margin:auto;
-
   }
   .menber_detail_visual img{
     max-width: 600px;
     padding: 0 20px 20px 0;
   }
   .menber_detail_keyword{
-    font-size: 20px;
-    color: blue;
+    flex-basis:auto;
+    margin: auto;
+    color:crimson;
     font-weight: bold;
-
+    text-align: center;
+    /* font-size: 20px; */
   }
+  .menber_detail_keyword li{
+    display: inline-block;
+    opacity:0.5;
+  }
+  .menber_detail_keyword li span{
+    display: block;
+    margin: 3px 2px;
+    padding: 2px 13px;
+    border: 1px solid #eb0b0b;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .menber_detail_comment section{
+    margin-top: 50px;
+  }
+ 
+ 
 }
+
+
+
 
 
 @media all and (max-width:1080px) {
@@ -429,8 +444,9 @@ ol.index li {
     background-color: #deecf8;
   }
 
-  /*メンバー紹介ページ*/
-
+  /* //////////////////// */
+  /*     メンバー紹介ページ   */
+  /* //////////////////   */
   .menber_list{
     display:flex;
     flex-wrap:wrap;
@@ -439,7 +455,7 @@ ol.index li {
   }
   .menber_box{
     display: block;
-    margin:auto;
+    margin: 50px;
     /* width: auto; */
     
   }
@@ -453,8 +469,61 @@ ol.index li {
     width: 200px;
     /* max-height: 40px; */
   }
-  .group_name{   /*メンバーページ,グループ名*/
-    text-align: center;
+
+  h1.group_name{   /*メンバーページ,グループ名*/
+    text-align: left;
     font-size: 1.5rem;
+  }
+
+  .menber_detail{
+    position: relative;
+    /* display: flex; */
+    max-width: 1200px;
+    flex: 100%;
+    /* margin: 0 auto; */
+    margin: 100px auto;
+    /* font-size: 10px; */
+  }
+  .menber_detail_header{
+     flex-wrap: wrap;
+  }
+  .menber_detail_content{
+    font-family: fantasy;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+    line-height:10px;
+  }
+
+  .menber_detail_visual{
+    text-align: center;
+  }
+
+  .menber_detail_visual img{
+    max-width: 70%;
+    /* margin: auto; */
+  }
+  .menber_detail_keyword{
+    flex-basis:auto;
+    margin: auto;
+    color:crimson;
+    font-weight: bold;
+    text-align: center;
+    /* font-size: 10px; */
+  }
+  .menber_detail_keyword li{
+    display: inline-block;
+    opacity:0.5;
+  }
+  .menber_detail_keyword li span{
+    display: block;
+    margin: 3px 2px;
+    padding: 2px 13px;
+    border: 1px solid #eb0b0b;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  .menber_detail_comment section{
+    margin-top: 50px;
   }
 }
