@@ -288,17 +288,19 @@ ol.index li {
   /* //////////////////// */
   /*     メンバー紹介ページ   */
   /* //////////////////   */
+  h1.group_name{
+    text-align: left;
+    font-size: 30px;
+  }
   .menber_list{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-
   }
   .menber_box{
     display: block;
     margin: 50px;
     /* width: auto; */
-    
   }
   .menber_data{ /*メンバーページ,テキスト*/
     margin-left: auto;
@@ -310,12 +312,6 @@ ol.index li {
     width: 200px;
     /* max-height: 40px; */
   }
-
-  h1.group_name{   /*メンバーページ,グループ名*/
-    text-align: left;
-    font-size: 1.5rem;
-  }
-
   .menber_detail{
     position: relative;
     /* display: flex; */
@@ -447,6 +443,10 @@ ol.index li {
   /* //////////////////// */
   /*     メンバー紹介ページ   */
   /* //////////////////   */
+  h1.group_name{
+    text-align: center;
+    font-size: 30px;
+  }
   .menber_list{
     display:flex;
     flex-wrap:wrap;
@@ -468,11 +468,6 @@ ol.index li {
   .menber_list img{
     width: 200px;
     /* max-height: 40px; */
-  }
-
-  h1.group_name{   /*メンバーページ,グループ名*/
-    text-align: left;
-    font-size: 1.5rem;
   }
 
   .menber_detail{
