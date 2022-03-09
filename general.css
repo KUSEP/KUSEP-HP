@@ -288,6 +288,7 @@ ol.index li {
   /* //////////////////// */
   /*     メンバー紹介ページ   */
   /* //////////////////   */
+  
   h1.group_name{
     text-align: left;
     font-size: 30px;
@@ -302,7 +303,7 @@ ol.index li {
     margin: 50px;
     /* width: auto; */
   }
-  .menber_data{ /*メンバーページ,テキスト*/
+  .menber_data{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
