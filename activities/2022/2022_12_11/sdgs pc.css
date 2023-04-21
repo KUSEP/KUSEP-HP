@@ -1,0 +1,113 @@
+h1 {
+    color: #000000;/*文字色*/
+    border: solid 6px #000000;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+.one,.two,.three,.four,.five{
+ display: flex;
+}
+ 
+.contentA{
+ width: 45%;
+ height: 900px;
+}
+
+.contentB{
+  width: 55%;
+  height: 900px;
+}
+
+.contentA h2{
+  color: #ffffff;/*文字色*/  
+  background: #000000;/*背景色*/
+  padding: 0.5em;/*文字まわり（上下左右）の余白*/
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20%;
+}
+
+.one-text{
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.contentB{
+  position: relative;
+}
+.contentB img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+}
+
+.contentC,.contentD{
+  width: 50%;
+  height: 300px;
+  background-color: #545454;
+}
+
+ul {
+  display: flex;
+  margin-top: 10%;
+}
+
+li{
+  list-style: none;
+}
+
+.contentD p{
+  color: #ffffff;
+}
+
+.D-one{
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.contentE,.contentF,.contentG,.contentH,.contentI,.contentJ{
+  width: 50%;
+  height: 600px;
+}
+
+.contentE img,.contentG img,.contentI img{
+  width: 60%;
+ margin-top: 25%;
+}
+
+
+.contentF h2,.contentH h2,.contentJ h2{
+  color: #ffffff;/*文字色*/  
+  background: #000000;/*背景色*/
+  padding: 0.5em;/*文字まわり（上下左右）の余白*/
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+
+.text{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+}
+
+.six{
+  height: 200px;
+}
+
+.contentK{
+  margin-left: 15%;
+  margin-right: 15%;
+margin-top: 5%;
+}
